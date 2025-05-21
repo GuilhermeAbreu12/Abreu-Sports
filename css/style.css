@@ -10,7 +10,6 @@
     --azul02: rgb(1, 1, 110);
     font-family: sans-serif
 }
-
 body {
     min-height: 100vh;
     max-width: 100vw;
@@ -31,6 +30,11 @@ body {
     margin-top: 4%;
     color: var(--white01);
     font-family: Impact;
+}
+#title span:hover {
+    transition: .8s;
+    color: rgb(1, 98, 1);
+    filter: drop-shadow(0 0 20px rgb(2, 226, 2));
 }
 #subtitle {
     color: black;
@@ -65,9 +69,25 @@ section#container-cards.container {
     border-radius: 10px;
     background-color: black;
 }
-#card-spfc {
+
+/* Cores especiais nos cards */
+#team-card1 {
     background: linear-gradient(to bottom, rgb(190, 15, 15), rgb(122, 1, 1));
 }
+#team-card2 {
+    background: linear-gradient(to bottom, rgb(2, 226, 2), darkgreen);
+}
+#team-card3 {
+    background: linear-gradient(to bottom, white, rgb(66, 66, 66));
+}
+#team-card4 {
+    background: linear-gradient(to bottom, rgb(150, 0, 0), rgb(84, 0, 0));
+}
+#team-card5 {
+    background: linear-gradient(to bottom, white, rgb(161, 161, 161));
+}
+/* Fim das cores especiais nos cards */
+
 .card-head{
     max-height: 80%;
     height: 90%;
@@ -80,8 +100,9 @@ section#container-cards.container {
     border-bottom: 1px solid black;
     border-radius: 10px 10px 0 0;
     & > img {
-        max-height: 100%;
+        max-height: 70%;
         max-width: 100%;
+        object-fit: cover;
     }
 }
 .card-body{
