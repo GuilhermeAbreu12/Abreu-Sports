@@ -9,32 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <h1 id='title'>Abreu Sports</h1>
+    <p id='subtitle'>Escolha seu time favorito</p>
     <section id="container-cards" class="container">
         <div class="row">
-            <div class="card col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="card col-12 col-sm-6 col-md-3 col-lg-2" id="card-spfc">
                 <div class="card-head">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2BoHcUiAASk8aygWzHBF-hrpyuSPxfEIqtw&s" alt="">
-                </div>
-                <div class="card-body">
-                    <button class="button">Acessar</button>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-3 col-lg-2">
-                <div class="card-head">
-                </div>
-                <div class="card-body">
-                    <button class="button">Acessar</button>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-3 col-lg-2">
-                <div class="card-head">
-                </div>
-                <div class="card-body">
-                    <button class="button">Acessar</button>
-                </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-md-3 col-lg-2">
-                <div class="card-head">
                 </div>
                 <div class="card-body">
                     <button class="button">Acessar</button>
