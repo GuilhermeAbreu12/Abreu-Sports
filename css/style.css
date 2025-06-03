@@ -22,6 +22,9 @@ body {
     background-size: cover;
     background-position: center;
 }
+header {
+    display: contents;
+}
 #title, #subtitle {
     text-align: center;
     font-family: sans-serif;
@@ -113,16 +116,23 @@ section#container-cards.container {
     border-radius: 0 0 10px 10px;
     background-color: gainsboro;
 }
-.button{
+a.btn-team{
     height: 100%;
     width: 100%;
     border: 1px solid var(--azul02);
     border-radius: 0 0 10px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
     color: white;
     background: linear-gradient(to bottom, var(--azul01), var(--azul02));
+    text-decoration: none;
+    
     transition: .4s;
 }
-.button:hover {
+a.btn-team:hover {
     box-shadow: 0 0 20px var(--azul01);
     background: linear-gradient(to bottom, var(--azul01), var(--azul01), var(--azul02));
 }
