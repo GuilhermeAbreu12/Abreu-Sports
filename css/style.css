@@ -153,26 +153,36 @@ form.form-team {
 .team-section{
     height: 30vw;
     width: 80vw;
-    padding: .5%;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     border: 1px solid black;
     border-radius: 10px;
 
     background-color: white;
 }
+#team-section__left {
+    width: 20vw;
+}
 .team-section__team-icon{
     height: 15vw;
-    width: 15vw;
+    width: 75%;
     padding: .5%;
 
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
 
     background-color: aliceblue;
 }
 #team-section1 {
     background: var(--bgTeam01);
+}
+#team-section__center{
+    width: 40vw;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#team-section__right {
+    width: 20vw;
 }
