@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 :root {
+    font-family: sans-serif;
+
     --white01: white;
     --white02: aliceblue;
-    --azul01: rgb(31, 134, 224);
-    --azul02: rgb(1, 1, 110);
-    font-family: sans-serif
+    --blue01: rgb(31, 134, 224);
+    --blue02: rgb(1, 1, 110);
+    
+    --bgTeam01: linear-gradient(to bottom, rgb(190, 15, 15), rgb(122, 1, 1));
+    --bgTeam02: linear-gradient(to bottom, rgb(2, 226, 2), darkgreen);
+    --bgTeam03: linear-gradient(to bottom, white, rgb(66, 66, 66));
+    --bgTeam04: linear-gradient(to bottom, rgb(150, 0, 0), rgb(84, 0, 0));
+    --bgTeam05: linear-gradient(to bottom, white, rgb(161, 161, 161));
 }
 body {
     min-height: 100vh;
@@ -75,19 +82,19 @@ section#container-cards.container {
 
 /* Cores especiais nos cards */
 #team-card1 {
-    background: linear-gradient(to bottom, rgb(190, 15, 15), rgb(122, 1, 1));
+    background: var(--bgTeam01);
 }
 #team-card2 {
-    background: linear-gradient(to bottom, rgb(2, 226, 2), darkgreen);
+    background: var(--bgTeam02);
 }
 #team-card3 {
-    background: linear-gradient(to bottom, white, rgb(66, 66, 66));
+    background: var(--bgTeam03);
 }
 #team-card4 {
-    background: linear-gradient(to bottom, rgb(150, 0, 0), rgb(84, 0, 0));
+    background: var(--bgTeam04);
 }
 #team-card5 {
-    background: linear-gradient(to bottom, white, rgb(161, 161, 161));
+    background: var(--bgTeam05);
 }
 /* Fim das cores especiais nos cards */
 
@@ -116,10 +123,15 @@ section#container-cards.container {
     border-radius: 0 0 10px 10px;
     background-color: gainsboro;
 }
-a.btn-team{
+
+/* Botão para mudar de página */
+form.form-team {
+    height: 100%;
+}
+.btn-team{
     height: 100%;
     width: 100%;
-    border: 1px solid var(--azul02);
+    border: 1px solid var(--blue02);
     border-radius: 0 0 10px 10px;
 
     display: flex;
@@ -127,12 +139,37 @@ a.btn-team{
     justify-content: center;
         
     color: white;
-    background: linear-gradient(to bottom, var(--azul01), var(--azul02));
+    background: linear-gradient(to bottom, var(--blue01), var(--blue02));
     text-decoration: none;
     
     transition: .4s;
 }
-a.btn-team:hover {
-    box-shadow: 0 0 20px var(--azul01);
-    background: linear-gradient(to bottom, var(--azul01), var(--azul01), var(--azul02));
+.btn-team:hover {
+    box-shadow: 0 0 20px var(--blue01);
+    background: linear-gradient(to bottom, var(--blue01), var(--blue01), var(--blue02));
+}
+
+/* Team Pages*/
+.team-section{
+    height: 30vw;
+    width: 80vw;
+    padding: .5%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: white;
+}
+.team-section__team-icon{
+    height: 15vw;
+    width: 15vw;
+    padding: .5%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: aliceblue;
+}
+#team-section1 {
+    background: var(--bgTeam01);
 }
