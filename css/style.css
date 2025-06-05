@@ -66,8 +66,8 @@ section#container-cards.container {
     width: 100%;
     gap: 5px;
     display: flex;
+    align-items: center;
     justify-content: center;
-
 }
 .card {
     height: 250px;
@@ -151,38 +151,126 @@ form.form-team {
 
 /* Team Pages*/
 .team-section{
-    height: 30vw;
+    min-height: 30vw;
     width: 80vw;
     padding: 1rem;
     display: flex;
+    justify-content: center;
     border: 1px solid black;
     border-radius: 10px;
 
     background-color: white;
 }
-#team-section__left {
-    width: 20vw;
+.team-section__left {
+    min-width: 25%;
+    padding: 3% 0 .5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    border-radius: 10px;
 }
 .team-section__team-icon{
-    height: 15vw;
-    width: 75%;
+    max-height: 70%;
+    height: 20vw;
+    width: 85%;
     padding: .5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: 2px solid black;
     border-radius: 10px;
 
     background-color: aliceblue;
+    & > img {
+        max-height: 90%;
+    }
 }
-#team-section1 {
+
+/* Personalização de cards */
+#team-section__left-01, #team-section1{
     background: var(--bgTeam01);
 }
-#team-section__center{
-    width: 40vw;
-    
+
+#team-section__left-02, #team-section2 {
+    background: var(--bgTeam02);
+}
+
+#team-section__left-03, #team-section3 {
+    background: var(--bgTeam03);
+}
+
+#team-section__left-04, #team-section4 {
+    background: var(--bgTeam04);
+}
+
+#team-section__left-05, #team-section5 {
+    background: var(--bgTeam05);
+}
+
+/* Fim da Personalização de cards */
+.team-section__title{
+    font-size: 2vw;
+    text-align: center;
+    color: gainsboro;
+}
+.team-section__center{
+    max-width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 16px;
+    & > p {
+        margin: 0;
+    }
 }
-#team-section__right {
-    width: 20vw;
+.team-section__right {
+    width: 0;
+}
+
+/* btn-voltar 
+.btn-voltar {
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+
+    border: 2px solid var(--blue01);
+    border-radius: 10px;
+
+    color: white;
+    background: linear-gradient(to bottom, var(--blue01), var(--blue02));
+}*/
+.btn-voltar {
+    padding: 4px 20px;
+    margin: 8px 0;
+
+    border: 2px solid var(--blue01);
+    border-radius: 10px;
+
+    color: white;
+    background: linear-gradient(to bottom, var(--blue01), var(--blue02));
+    transition: .7s;
+}
+.btn-voltar:hover {
+    box-shadow: 0 0 20px var(--blue01);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 5px;
+
+    color: white;
+    border: 1px solid var(--blue01);
+    background-color: var(--blue02);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    & > p {
+        margin: 0;
+    }
 }
