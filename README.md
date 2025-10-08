@@ -1,5 +1,4 @@
 # Abreu-Sports
-Repositório criado com o objetivo de facilitar a transferência de arquivos durante o desenvolvimento de um projeto didático simples na ETEC Antônio Devisate, além de compartilhar com a comunidade o meu progresso como desenvolvedor de sistemas.
 
 # Proposta
 Criar um site utilizando a linguagem PHP para desenvolver e controlar o conteúdo HTML, utilizando técnicas básicas de componentização.
